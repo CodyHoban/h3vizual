@@ -1,11 +1,20 @@
 import React from 'react'
 import Lottie from 'react-lottie'
 import {makeStyles} from '@material-ui/core/styles'
+import Grid from '@material-ui/core/grid'
+import Button from '@material-ui/core/button'
+import ButtonArrow from '../components/ui/ButtonArrow'
+import Typography from '@material-ui/core/Typography'
 
 import animationData from '../animations/landinganimation/data'
 
 const useStyles = makeStyles(theme => ({
-
+    animation: { 
+        maxWidth: "50em",
+        minWidth: "21em",
+        marginTop: "2em",
+        marginLeft: "10%"
+    }
 }))
 
 export default function LandingPage() {
@@ -20,5 +29,36 @@ export default function LandingPage() {
         }
       };
 
-      return <Lottie options={defaultOptions} height={"100%"} width={"100%"} />
+    return (
+        <>
+            <Grid container direction="column">
+                <Grid item>
+                    <Grid container justify="flex-end" alignItems="center" direction="row">
+                        <Grid sm item>
+                            <Typography variant="h2" align="center">
+                                Bringing West Coast Technology
+                                <br />
+                                to the Midwest
+                            </Typography>
+                            <Grid container >
+                                <Grid item>
+                                    <Button variant="contained">Free Estimate</Button>
+                                </Grid>
+                                <Grid item>
+                                    <Button variant="outlined">
+                                        Learn More
+                                        <ButtonArrow width={15} height={15} fill="red" />
+                                    </Button>
+                                </Grid>
+                            </Grid>
+                        </Grid>
+                    </Grid>
+                    <Grid className={classes.animation} sm item>
+                        <Lottie options={defaultOptions} height={"100%"} width={"100%"} />
+                    </Grid>
+                </Grid>
+            </Grid>
+            
+        </>
+    );
 }
