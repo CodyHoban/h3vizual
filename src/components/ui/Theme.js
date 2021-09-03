@@ -2,13 +2,14 @@ import { createTheme } from '@material-ui/core/styles'
 
 const arcBlue = "#5B72B9"
 const arcOrange = "#FFBA60"
+const arcGrey = "#868686"
 
 const theme = createTheme({
 
     palette: {
         common: { 
             arcBlue: "#5B72B9",
-            arcOrgange: "#FFBA60"
+            arcOrange: "#FFBA60"
         },
         primary: { 
             main: `${arcBlue}`
@@ -34,13 +35,34 @@ const theme = createTheme({
             fontFamily: "Raleway",
             fontWeight: 700,
             fontSize: "2.5rem",
-            color: `${arcBlue}`,
+            color: arcBlue,
             lineHeight: 1.5
         },
         h3: {
             fontFamily: "Pacifico",
             fontSize: "2.5rem",
             color: arcBlue
+        },
+        h4: { 
+            fontFamily: "Raleway",
+            fontSize: "1.75rem",
+            color: arcBlue,
+            fontWeight: 700
+        },
+        subtitle1: { 
+            fontSize: "1.25rem",
+            fontWeight: 300,
+            color: arcGrey
+        },
+        learnButton: { 
+            borderColor: arcBlue,
+            color: arcBlue,
+            borderWidth: 2,
+            textTransform: "none",
+            borderRadius: 50,
+            fontFamily: "Roboto",
+            fontWeight: "bold",
+            fontSize: "0.9rem",
         }
     }
 
