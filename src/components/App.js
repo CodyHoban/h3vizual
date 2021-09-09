@@ -26,7 +26,14 @@ function App() {
             <Route 
               exact 
               path="/" 
-              component={LandingPage} />
+              render={(props) =>
+                <LandingPage
+                  {...props}
+                  setValue={setValue} 
+                  setSelectedIndex={setSelectedIndex}
+                  />
+              } 
+            />
             <Route 
               exact 
               path="/services" component={() => <div>Services</div>} />
@@ -60,9 +67,7 @@ function App() {
               component={() => <div>Estimate</div>} />
           </Switch>
           <Footer 
-            value={value} 
             setValue={setValue} 
-            selectedIndex={selectedIndex} 
             setSelectedIndex={setSelectedIndex}
           />
         </BrowserRouter>

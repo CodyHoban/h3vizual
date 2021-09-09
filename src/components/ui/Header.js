@@ -157,7 +157,7 @@ export default function Header(props) {
 
     const menuOptions = [{name: "Services", link: "/services", activeIndex: 1, selectedIndex: 0},
                          {name: "Cutom Software Development", link: "/customsoftware", activeIndex: 1, selectedIndex: 1}, 
-                         {name: "Mobile App Development", link: "/mobileapps", activeIndex: 1, selectedIndex: 2}, 
+                         {name: "iOS/Android App Development", link: "/mobileapps", activeIndex: 1, selectedIndex: 2}, 
                          {name: "Website Development", link: "/websites", activeIndex: 1, selectedIndex: 3}
                         ]
 
@@ -184,6 +184,9 @@ export default function Header(props) {
                         }
                     }
                     break;
+                case '/estimate':
+                    props.setValue(5);
+                    break;
                 default:
                     break;
             }
@@ -207,7 +210,14 @@ export default function Header(props) {
                 />
             ))}
         </Tabs>
-        <Button variant="contained" color="secondary" className={classes.button}>
+        <Button 
+            component={Link} 
+            to="/estimate" 
+            variant="contained" 
+            color="secondary" 
+            className={classes.button} 
+            onClick={() => props.setValue(5)}
+        >
             Free Estimate
         </Button>
         <Menu 

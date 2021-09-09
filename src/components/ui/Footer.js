@@ -103,7 +103,7 @@ export default function Footer(props) {
                                 onClick={() => {props.setValue(1); props.setSelectedIndex(2)}} 
                                 to="/mobileapps"
                             >
-                                Mobie App Development
+                                iOS/Android App Development
                             </Grid>
                             <Grid 
                                 item 
