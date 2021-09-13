@@ -137,7 +137,7 @@ export default function LandingPage(props) {
         rendererSettings: {
           preserveAspectRatio: 'xMidYMid slice'
         }
-      };
+    };
 
     return (
         <>
