@@ -70,6 +70,10 @@ const useStyles = makeStyles((theme) => ({
     "&:hover": {
       backgroundColor: theme.palette.secondary.light,
     },
+    [theme.breakpoints.down("sm")]: {
+      height: 40,
+      width: 225,
+    },
   },
 }));
 
@@ -260,7 +264,13 @@ export default function Contact(props) {
                 onChange={(event) => setMessage(event.target.value)}
               />
             </Grid>
-            <Grid item container justify="center" style={{ marginTop: "2em" }}>
+            <Grid
+              item
+              container
+              direction={matchesSM ? "column" : "row"}
+              justify="center"
+              style={{ marginTop: "2em" }}
+            >
               <Button
                 disabled={
                   name.length === 0 ||
@@ -286,7 +296,9 @@ export default function Contact(props) {
         </Grid>
       </Grid>
       <Dialog
+        style={{ zIndex: 1302 }}
         open={open}
+        fullScreen={matchesXS}
         onClose={() => setOpen(false)}
         PaperProps={{
           style: {
@@ -350,7 +362,7 @@ export default function Contact(props) {
               </Grid>
             </Grid>
           </Grid>
-          <Grid item style={{ maxWidth: "20em" }}>
+          <Grid item style={{ maxWidth: matchesXS ? "100%" : "20em" }}>
             <TextField
               inputProps={{ disableUnderline: true }}
               value={message}
@@ -362,7 +374,13 @@ export default function Contact(props) {
               onChange={(event) => setMessage(event.target.value)}
             />
           </Grid>
-          <Grid item container style={{ marginTop: "2em" }} alignItems="center">
+          <Grid
+            item
+            container
+            direction={matchesSM ? "column" : "row"}
+            style={{ marginTop: "2em" }}
+            alignItems="center"
+          >
             <Grid item>
               <Button
                 style={{ fontWeight: 300 }}
