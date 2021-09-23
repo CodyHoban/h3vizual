@@ -1,6 +1,6 @@
-import React, { useState } from "react";
-import { ThemeProvider, withTheme } from "@material-ui/core/styles";
-import { BrowserRouter, Route, Switch } from "react-router-dom";
+import React, {useState} from "react";
+import {ThemeProvider, withTheme} from "@material-ui/core/styles";
+import {BrowserRouter, Route, Switch} from "react-router-dom";
 
 import theme from "./ui/Theme";
 import Header from "./ui/Header";
@@ -13,6 +13,7 @@ import Websites from "./Websites";
 import Revolution from "./Revolution";
 import About from "./About";
 import Contact from "./Contact";
+import Estimate from "./Estimate";
 
 function App() {
   const [selectedIndex, setSelectedIndex] = useState(0);
@@ -120,7 +121,13 @@ function App() {
             <Route
               exact
               path="/estimate"
-              component={() => <div>Estimate</div>}
+              render={(props) => (
+                <Estimate
+                  {...props}
+                  setValue={setValue}
+                  setSelectedIndex={setSelectedIndex}
+                />
+              )}
             />
           </Switch>
           <Footer setValue={setValue} setSelectedIndex={setSelectedIndex} />

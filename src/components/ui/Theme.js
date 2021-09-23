@@ -1,4 +1,4 @@
-import { createTheme } from "@material-ui/core/styles";
+import {createTheme} from "@material-ui/core/styles";
 
 const arcBlue = "#5B72B9";
 const arcOrange = "#FFBA60";
@@ -47,6 +47,12 @@ const theme = createTheme({
       fontSize: "1.75rem",
       color: arcBlue,
       fontWeight: 700,
+    },
+    h6: {
+      fontWeight: 500,
+      fontFamily: "Raleway",
+      color: arcBlue,
+      lineHeight: 1,
     },
     subtitle1: {
       fontSize: "1.25rem",

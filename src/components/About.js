@@ -1,5 +1,5 @@
 import React from "react";
-import { makeStyles, useTheme } from "@material-ui/core/styles";
+import {makeStyles, useTheme} from "@material-ui/core/styles";
 import Grid from "@material-ui/core/Grid";
 import Typography from "@material-ui/core/Typography";
 import Avatar from "@material-ui/core/Avatar";
@@ -50,7 +50,7 @@ export default function About(props) {
       <Grid
         item
         className={classes.rowContainer}
-        style={{ marginTop: matchesMD ? "1em" : "2em" }}
+        style={{marginTop: matchesMD ? "1em" : "2em"}}
       >
         <Typography align={matchesMD ? "center" : undefined} variant="h2">
           About Us
@@ -59,9 +59,9 @@ export default function About(props) {
       <Grid
         item
         container
-        justify="center"
+        justifyContent="center"
         className={classes.rowContainer}
-        style={{ marginTop: "3em" }}
+        style={{marginTop: "3em"}}
       >
         <Typography
           variant="h4"
@@ -78,13 +78,13 @@ export default function About(props) {
       <Grid
         item
         container
-        justify="space-around"
+        justifyContent="space-around"
         className={classes.rowContainer}
         direction={matchesMD ? "column" : "row"}
         alignItems={matchesMD ? "center" : undefined}
-        style={{ marginTop: "10em", marginBottom: "10em" }}
+        style={{marginTop: "10em", marginBottom: "10em"}}
       >
-        <Grid item container direction="column" lg style={{ maxWidth: "35em" }}>
+        <Grid item container direction="column" lg style={{maxWidth: "35em"}}>
           <Grid item>
             <Grid item>
               <Typography
@@ -100,7 +100,7 @@ export default function About(props) {
                 variant="body1"
                 paragraph
                 align={matchesMD ? "center" : undefined}
-                style={{ fontWeight: 700, fontStyle: "italic" }}
+                style={{fontWeight: 700, fontStyle: "italic"}}
               >
                 We're the new kid on the bolck
               </Typography>
@@ -144,11 +144,11 @@ export default function About(props) {
           </Grid>
         </Grid>
         <Grid item container>
-          <Grid item container justify="center" lg>
+          <Grid item container justifyContent="center" lg>
             <img
               src={history}
               alt="quill pen sitting on top of book"
-              style={{ maxHeight: matchesMD ? 200 : "22em" }}
+              style={{maxHeight: matchesMD ? 200 : "22em"}}
             />
           </Grid>
         </Grid>
@@ -159,7 +159,7 @@ export default function About(props) {
         direction="column"
         alignItems="center"
         className={classes.rowContainer}
-        style={{ marginBottom: "15em" }}
+        style={{marginBottom: "15em"}}
       >
         <Grid item>
           <Typography variant="h4" align="center" gutterBottom>
@@ -177,9 +177,9 @@ export default function About(props) {
         <Grid item>
           <Avatar alt="founder" src={profile} className={classes.avatar} />
         </Grid>
-        <Grid item container justify={matchesMD ? "center" : undefined}>
+        <Grid item container justifyContent={matchesMD ? "center" : undefined}>
           <Hidden lgUp>
-            <Grid item lg style={{ maxWidth: "45em", padding: "1.25em" }}>
+            <Grid item lg style={{maxWidth: "45em", padding: "1.25em"}}>
               <Typography variant="body1" align="center" paragraph>
                 Est placerat in egestas erat. Accumsan in nisl nisi scelerisque
                 eu ultrices vitae auctor eu. Placerat vestibulum lectus mauris
@@ -200,13 +200,13 @@ export default function About(props) {
             direction="column"
             lg
             alignItems={matchesMD ? "center" : undefined}
-            style={{ marginBottom: matchesMD ? "2.5em" : 0 }}
+            style={{marginBottom: matchesMD ? "2.5em" : 0}}
           >
             <Grid item>
               <img
                 src={yearbook}
                 alt="yearbook page about founder"
-                style={{ maxWidth: matchesMD ? 300 : undefined }}
+                style={{maxWidth: matchesMD ? 300 : undefined}}
               />
             </Grid>
             <Grid item>
@@ -216,7 +216,7 @@ export default function About(props) {
             </Grid>
           </Grid>
           <Hidden mdDown>
-            <Grid item lg style={{ maxWidth: "45em", padding: "1.25em" }}>
+            <Grid item lg style={{maxWidth: "45em", padding: "1.25em"}}>
               <Typography variant="body1" align="center" paragraph>
                 Est placerat in egestas erat. Accumsan in nisl nisi scelerisque
                 eu ultrices vitae auctor eu. Placerat vestibulum lectus mauris
@@ -242,7 +242,7 @@ export default function About(props) {
               <img
                 src={puppy}
                 alt="grey spotted puppy"
-                style={{ maxWidth: matchesMD ? 300 : undefined }}
+                style={{maxWidth: matchesMD ? 300 : undefined}}
               />
             </Grid>
             <Grid item>

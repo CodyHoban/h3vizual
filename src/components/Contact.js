@@ -193,7 +193,7 @@ export default function Contact(props) {
         container
         direction="column"
         alignItems="center"
-        justify="center"
+        justifyContent="center"
         style={{
           marginBottom: matchesMD ? "5em" : 0,
           marginTop: matchesSM ? "1em" : matchesMD ? "5em" : 0,
@@ -320,7 +320,7 @@ export default function Contact(props) {
               item
               container
               direction={matchesSM ? "column" : "row"}
-              justify="center"
+              justifyContent="center"
               style={{marginTop: "2em"}}
             >
               <Button
@@ -470,7 +470,7 @@ export default function Contact(props) {
         container
         direction={matchesMD ? "column" : "row"}
         alignItems="center"
-        justify={matchesMD ? "center" : undefined}
+        justifyContent={matchesMD ? "center" : undefined}
         className={classes.background}
         lg={8}
         xl={9}
@@ -496,7 +496,11 @@ export default function Contact(props) {
               >
                 Take advantage of the 21st Centry.
               </Typography>
-              <Grid container justify={matchesMD ? "center" : undefined} item>
+              <Grid
+                container
+                justifyContent={matchesMD ? "center" : undefined}
+                item
+              >
                 <Button
                   variant="outlined"
                   className={classes.learnButton}
