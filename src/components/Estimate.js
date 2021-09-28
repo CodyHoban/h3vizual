@@ -72,7 +72,7 @@ const defaultQuestions = [
         id: 2,
         title: "iOS/Android App Development",
         subtitle: null,
-        icon: software,
+        icon: mobile,
         iconAlt: "phone and tablets outline",
         selected: false,
         cost: 0,
@@ -91,7 +91,7 @@ const defaultQuestions = [
 ];
 
 const softwareQuestions = [
-  {...defaultQuestions[0], active: false, active: true},
+  {...defaultQuestions[0], active: false},
   {
     id: 2,
     title: "Which platforms do you need supported?",
@@ -367,6 +367,18 @@ export default function Estimate() {
     }
   };
 
+  const handleSelect = (id) => {
+    const newQuestions = cloneDeep(questions);
+    const currentlyActive = newQuestions.filter((question) => question.active);
+    const activeIndex = currentlyActive[0].id - 1;
+
+    const newSelected = newQuestions[activeIndex].options[id - 1];
+
+    newSelected.selected = !newSelected.selected;
+
+    setQuestions(newQuestions);
+  };
+
   return (
     <Grid container direction="row">
       {/*-----Left Side-----*/}
@@ -402,6 +414,7 @@ export default function Estimate() {
                     fontWeight: 500,
                     fontSize: "2.25rem",
                     marginTop: "5em",
+                    lineHeight: 1.25,
                   }}
                 >
                   {question.title}
@@ -417,8 +430,23 @@ export default function Estimate() {
               </Grid>
               <Grid item container>
                 {question.options.map((option) => (
-                  <Grid item container direction="column" md>
-                    <Grid item style={{maxWidth: "12em"}}>
+                  <Grid
+                    item
+                    container
+                    direction="column"
+                    md
+                    component={Button}
+                    onClick={() => handleSelect(option.id)}
+                    style={{
+                      display: "grid",
+                      textTransform: "none",
+                      borderRadius: 0,
+                      backgroundColor: option.selected
+                        ? theme.palette.common.arcOrange
+                        : null,
+                    }}
+                  >
+                    <Grid item style={{maxWidth: "14em"}}>
                       <Typography
                         variant="h6"
                         align="center"
