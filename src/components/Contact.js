@@ -19,11 +19,6 @@ import mobileBackground from "../assets/mobileBackground.jpg";
 import phoneIcon from "../assets/phone.svg";
 import emailIcon from "../assets/email.svg";
 import airplane from "../assets/send.svg";
-import {
-  FlashOnTwoTone,
-  LocalDiningTwoTone,
-  SettingsBackupRestoreTwoTone,
-} from "@material-ui/icons";
 
 const useStyles = makeStyles((theme) => ({
   background: {
@@ -311,6 +306,7 @@ export default function Contact(props) {
                 className={classes.message}
                 multiline
                 fullWidth
+                placeholder="tell us more about your project"
                 rows={10}
                 id="message"
                 onChange={(event) => setMessage(event.target.value)}
