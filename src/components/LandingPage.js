@@ -152,9 +152,9 @@ export default function LandingPage(props) {
           >
             <Grid sm item className={classes.heroTextContainer}>
               <Typography variant="h2" align="center">
-                Bringing West Coast Technology
+                The Solutions and Ideas
                 <br />
-                to the Midwest
+                That Make it all Work
               </Typography>
               <Grid
                 container
