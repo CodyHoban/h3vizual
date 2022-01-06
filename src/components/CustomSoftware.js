@@ -41,7 +41,7 @@ const useStyles = makeStyles((theme) => ({
   },
 }));
 
-export default function CustomSoftware(props) {
+export default function CreativeDesign(props) {
   const classes = useStyles();
   const theme = useTheme();
   const matchesMD = useMediaQuery(theme.breakpoints.down("md"));
@@ -110,7 +110,7 @@ export default function CustomSoftware(props) {
         <Grid item container direction="column" className={classes.heading}>
           <Grid item>
             <Typography variant="h2" align={matchesSM ? "center" : undefined}>
-              Custom Software Development
+              Creative Designs & Solutions
             </Typography>
           </Grid>
           <Grid item>
@@ -119,37 +119,37 @@ export default function CustomSoftware(props) {
               variant="body1"
               paragraph
             >
-              Whether we're replacing old software or inventing new solutions.
-              Arc Development is here to help your business tackle technology
+              If you have an idea but aren't sure how to bring it to life
+              H3Vizual is here to see it through.
             </Typography>
             <Typography
               align={matchesMD ? "center" : undefined}
               variant="body1"
               paragraph
             >
-              Using regular commercial software leaves you with a lot of stuff
-              you don't need, without some of the stuff you do need, and
-              ultimately controls the way you work. Without using any software
-              at ll you risk falling behind competitors and missing out on huge
-              savings from increased efficiency.
+              With today's quick paced online world, we can help you get set up
+              and started as easy as 1-2-3. Bring us anything you'd like even if
+              it's just a basic idea and we can get to work. With three people
+              on our team we have a highly collaborative process that strives to
+              achive exactly what you are looking for. Whether it be
+              minimalistic lines, bold patterns, or big pops of color.
             </Typography>
             <Typography
               align={matchesMD ? "center" : undefined}
               variant="body1"
               paragraph
             >
-              Our custom solutions are designed from the ground up with your
-              needs, wants, and goals at the core. This is collaborative process
-              produces finely tuned software that is much more effective at
-              improving your workflow and reducing costs than generalized
-              options.
+              The websites we design strive to be on the cutting edge of
+              technology and style with fresh eye catching images that are sure
+              to catch your customers attention.
             </Typography>
             <Typography
               align={matchesMD ? "center" : undefined}
               variant="body1"
               paragraph
             >
-              We create exactly what you want, exactly how you want it.
+              Our designs give you options to customize your look the way you
+              want it.
             </Typography>
           </Grid>
         </Grid>
@@ -246,7 +246,7 @@ export default function CustomSoftware(props) {
           <Grid item container direction="column" md>
             <Grid item>
               <Typography variant="h4" align={matchesSM ? "center" : undefined}>
-                Digital Documents & Data
+                Digital Age & Limited Waste
               </Typography>
             </Grid>
             <Grid item>
@@ -305,9 +305,10 @@ export default function CustomSoftware(props) {
             </Grid>
             <Grid item>
               <Typography varient="body1" paragraph align="right">
-                Whether you're a large brand, just getting started, or taking
-                off right now, our application architecture ensures pain-free
-                growth and reliability.
+                We love working with brands of any size. From your small local
+                shop to your bigger corporations. We will be at your side to do
+                it painlessly along the way. Being a family run company means we
+                know what support really means.
               </Typography>
             </Grid>
           </Grid>
@@ -337,9 +338,9 @@ export default function CustomSoftware(props) {
               Many problems are merely symptoms of larger, underlying issues.
             </Typography>
             <Typography variant="body1" paragraph align="center">
-              We can help you thoroughly examin all areas of your business to
-              develop a holistic plan for the most effective implementation of
-              technology.
+              An eye cathcing design helps keep customers engaed and staying on
+              your page with your products longer which will help with long term
+              retention.
             </Typography>
           </Grid>
         </Grid>
@@ -432,8 +433,8 @@ export default function CustomSoftware(props) {
                 paragraph
                 align={matchesSM ? "center" : "right"}
               >
-                So why are so many pieces of software complicated, confusing,
-                and frustrating?
+                We make designs that users enjoy using! They are intuitive and
+                simple wrapped up in one.
               </Typography>
               <Typography
                 varient="body1"

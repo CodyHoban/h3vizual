@@ -211,13 +211,13 @@ export default function LandingPage(props) {
                 textAlign: matchesSM ? "center" : undefined,
               }}
             >
-              <Typography variant="h4">Custom Software Development</Typography>
+              <Typography variant="h4">Creative Designs & Solutions</Typography>
               <Typography variant="subtitle1" className={classes.subtitle}>
-                Save Energy. Save Time. Save Money.
+                Breath life into your product.
               </Typography>
               <Typography variant="subtitle1">
-                Complete digital solutions, from investigation to{" "}
-                <span className={classes.specialText}>celebration.</span>
+                Complete digital solutions, realize and celebrate your{" "}
+                <span className={classes.specialText}>creations.</span>
               </Typography>
               <Button
                 variant="outlined"
@@ -258,11 +258,11 @@ export default function LandingPage(props) {
             <Grid item style={{textAlign: matchesSM ? "center" : undefined}}>
               <Typography variant="h4">iOS/Android App Development</Typography>
               <Typography variant="subtitle1" className={classes.subtitle}>
-                Extend Functionality. Extend Access. Increase Engagment
+                See your ideas come to life.
               </Typography>
               <Typography variant="subtitle1">
-                Integrate your web experience or create a standalone app
-                {matchesSM ? null : <br />} with either mobile platform{" "}
+                Get your product into the hands of consumers with access
+                {matchesSM ? null : <br />} to your own mobile platform{" "}
               </Typography>
               <Button
                 variant="outlined"
@@ -309,7 +309,7 @@ export default function LandingPage(props) {
             >
               <Typography variant="h4">Website Development</Typography>
               <Typography variant="subtitle1" className={classes.subtitle}>
-                Reach More. Discover More. Sell More.
+                Customize your website anyway you'd like.
               </Typography>
               <Typography variant="subtitle1">
                 Optimized for Search Engines, built for speed.{" "}
