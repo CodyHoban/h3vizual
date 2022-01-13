@@ -261,7 +261,6 @@ export default function Footer(props) {
           <img alt="instagram logo" src={instagram} className={classes.icon} />
         </Grid>
       </Grid>
-      Example Footer
     </footer>
   );
 }

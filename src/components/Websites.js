@@ -84,7 +84,7 @@ export default function Websites(props) {
               paragraph
             >
               Having a website is a necessity in today's business world. They
-              give you on central, public location to let people know who you
+              give you a central, public location to let people know who you
               are, what you do, and why you're the best at it.
             </Typography>
             <Typography

@@ -1,14 +1,14 @@
 import {createTheme} from "@material-ui/core/styles";
 
-const arcBlue = "#a643B3";
-const arcOrange = "#FFBA60";
+const arcBlue = "#D96523";
+const arcOrange = "#21BF48";
 const arcGrey = "#868686";
 
 const theme = createTheme({
   palette: {
     common: {
-      arcBlue: "#5B72B9",
-      arcOrange: "#FFBA60",
+      arcBlue: "#D96523",
+      arcOrange: "#21BF48",
     },
     primary: {
       main: `${arcBlue}`,

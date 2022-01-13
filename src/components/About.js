@@ -7,9 +7,9 @@ import useMediaQuery from "@material-ui/core/useMediaQuery";
 import Hidden from "@material-ui/core/Hidden";
 
 import history from "../assets/history.svg";
-import profile from "../assets/founder.jpg";
-import yearbook from "../assets/yearbook.svg";
-import puppy from "../assets/puppy.svg";
+import profile from "../assets/Gallery-364.jpg";
+import twister from "../assets/twister.jpg";
+import facePaint from "../assets/facePaint.jpg";
 import CallToAction from "./ui/CallToAction";
 
 const useStyles = makeStyles((theme) => ({
@@ -69,10 +69,10 @@ export default function About(props) {
           className="classes.missionStatement"
         >
           Whether it be person to person, business to consumer, or an individual
-          to their interest, technology is meant to brin us closer to what we
-          care about in the best posible way. Arc Development will use that
-          princeiple to provide fast, moderm inexpensive, and aesthetic software
-          to the Midwest and beyond.
+          to their interest, technology is meant to bring us closer to what we
+          care about in the best posible way. H3Vizual will use that princeiple
+          to provide fast, moderm inexpensive, and aesthetic software to
+          wherever your needs are greatest.
         </Typography>
       </Grid>
       <Grid
@@ -102,43 +102,48 @@ export default function About(props) {
                 align={matchesMD ? "center" : undefined}
                 style={{fontWeight: 700, fontStyle: "italic"}}
               >
-                We're the new kid on the bolck
+                We've always been intrested in technology
               </Typography>
               <Typography
                 variant="body1"
                 paragraph
                 align={matchesMD ? "center" : undefined}
               >
-                Ac orci phasellus egestas tellus rutrum tellus pellentesque eu
-                tincidunt. Tellus orci ac auctor augue mauris augue neque
-                gravida.
+                We grew up playing with everything together. We'd get stuck on a
+                boulder in the snow, shaking it up on the tire swing, or have
+                fun playing board games together. But as kids we always stuck
+                together.
               </Typography>
               <Typography
                 variant="body1"
                 paragraph
                 align={matchesMD ? "center" : undefined}
               >
-                Lectus nulla at volutpat diam ut venenatis tellus. Velit aliquet
-                sagittis id consectetur. Tortor id aliquet lectus proin nibh
-                nisl condimentum id venenatis.
+                Eventually our intrest turned to tech. We played with video
+                games, created geocities websites, or looked at the moon through
+                a telescope. We took different paths to start but we all ended
+                up interested in the ever advancing technological age.
               </Typography>
               <Typography
                 variant="body1"
                 paragraph
                 align={matchesMD ? "center" : undefined}
               >
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-                eiusmod tempor incididunt ut labore et dolore magna aliqua. Nunc
-                sed augue lacus viverra vitae congue eu. At auctor urna nunc id
-                cursus metus aliquam eleifend mi.
+                Since we're close it allows us to work tegether, but having
+                different intrests allows us to specialize in different things
+                that we enjoy doing. That's what allows H3Vizual to work so well
+                together since we can all tackle the parts of the project that
+                we love best and still have all our bases covered.
               </Typography>
               <Typography
                 variant="body1"
                 paragraph
                 align={matchesMD ? "center" : undefined}
               >
-                All this change can be a lot to keep up with, and that's where
-                we come in.
+                The world has taken us to different parts of the globe, so we've
+                grown acustom to working with each other from a distance or
+                behind a screen. With todays challenges we think that gives us a
+                little bit of an edge that we could pass along to you as well.
               </Typography>
             </Grid>
           </Grid>
@@ -168,14 +173,17 @@ export default function About(props) {
         </Grid>
         <Grid item>
           <Typography variant="body1" paragraph align="center">
-            Zachary Reece, Founder
+            Cody Hoban - Website/Design
           </Typography>
           <Typography variant="body1" paragraph align="center">
-            I started coding about 2 years ago.
+            Cory Hoban - iOS/Android
+          </Typography>
+          <Typography variant="body1" paragraph align="center">
+            Kristin Hoban - Design/Creative
           </Typography>
         </Grid>
         <Grid item>
-          <Avatar alt="founder" src={profile} className={classes.avatar} />
+          <Avatar alt="founders" src={profile} className={classes.avatar} />
         </Grid>
         <Grid item container justifyContent={matchesMD ? "center" : undefined}>
           <Hidden lgUp>
@@ -204,30 +212,27 @@ export default function About(props) {
           >
             <Grid item>
               <img
-                src={yearbook}
+                src={twister}
                 alt="yearbook page about founder"
-                style={{maxWidth: matchesMD ? 300 : undefined}}
+                style={{maxWidth: matchesMD ? 300 : 375, marginTop: "1em"}}
               />
             </Grid>
             <Grid item>
               <Typography variant="caption">
-                a page from my Sophmore yearbook
+                clowing aroung OFF the job
               </Typography>
             </Grid>
           </Grid>
           <Hidden mdDown>
             <Grid item lg style={{maxWidth: "45em", padding: "1.25em"}}>
               <Typography variant="body1" align="center" paragraph>
-                Est placerat in egestas erat. Accumsan in nisl nisi scelerisque
-                eu ultrices vitae auctor eu. Placerat vestibulum lectus mauris
-                ultrices eros in cursus. Aliquam ut porttitor leo a. At erat
-                pellentesque adipiscing commodo elit at imperdiet.
+                We're truly a family company, with family values. We try and
+                enjoy what we do, while also eniching those around us. We'll do
+                everything we can to make sure your satisfied with your project.
               </Typography>
               <Typography variant="body1" align="center" paragraph>
-                Est placerat in egestas erat. Accumsan in nisl nisi scelerisque
-                eu ultrices vitae auctor eu. Placerat vestibulum lectus mauris
-                ultrices eros in cursus. Aliquam ut porttitor leo a. At erat
-                pellentesque adipiscing commodo elit at imperdiet.
+                H3Vizual works as a team because we started as a team. We'd love
+                for you to join the H3Vizual family too.
               </Typography>
             </Grid>
           </Hidden>
@@ -240,15 +245,13 @@ export default function About(props) {
           >
             <Grid item>
               <img
-                src={puppy}
+                src={facePaint}
                 alt="grey spotted puppy"
-                style={{maxWidth: matchesMD ? 300 : undefined}}
+                style={{maxWidth: matchesMD ? 300 : 375, marginTop: "1em"}}
               />
             </Grid>
             <Grid item>
-              <Typography variant="caption">
-                my miniature dapple dachshund, Sterling
-              </Typography>
+              <Typography variant="caption">showing some spirit!</Typography>
             </Grid>
           </Grid>
         </Grid>

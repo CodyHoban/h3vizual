@@ -102,7 +102,7 @@ export default function Revolution() {
               disslikes. Everything you want your app to be. The sky is the
               limit. what colors, what lines do you see for yourself? Are you a
               minimalistic Mary with smooth lines and creamy colors, or are you
-              a Party Pat with bright blod colors with shout!
+              a Party Pat with bright bold colors and graphics that shout!
             </Typography>
             <Typography
               variant="body1"
@@ -136,7 +136,7 @@ export default function Revolution() {
               align={matchesMD ? "center" : undefined}
               paragraph
             >
-              The fact is technology is constantly evoling. It will always be a
+              The fact is technology is constantly evolving. It will always be a
               boon to those who can adapt to use it. It can be hard to keep up
               with, but with varied intrests we can all find new ways to make
               our designs and creations what's right for you.
@@ -150,20 +150,19 @@ export default function Revolution() {
               community outreach. By joining in the Tampa Bay Javascript meetup
               we stay in tune with what other developers are thinking, the tools
               that they are using, and what's becoming waysided in the business
-              to make way for better proforming tools such as the the swap that
-              many people are making to hooks in the current programming
-              environment.
+              to make way for better performing tools such as the swap that many
+              people are making to hooks in the current programming environment.
             </Typography>
             <Typography
               variant="body1"
               align={matchesMD ? "center" : undefined}
               paragraph
             >
-              Designs also not to be on the forefront of our thoughts. With not
-              only the best tools, but where the industry is going as well to
-              better reach clients and customers. Our continuous looks into
-              conventions like Adobe Max allow us to know where other companies
-              are going and the equipment they are spotlighting for the future.
+              Designs are also on the forefront of our thoughts. With not only
+              the best tools, but where the industry is going as well to better
+              reach clients and customers. Our continuous looks into conventions
+              like Adobe Max allow us to know where other companies are going
+              and the equipment they are spotlighting for the future.
             </Typography>
             <Typography
               variant="body1"
@@ -186,7 +185,7 @@ export default function Revolution() {
               paragraph
             >
               The knowledge we gain from the technology we use will continue to
-              help us grow and succed.
+              help us grow and succeed.
             </Typography>
           </Grid>
         </Grid>
@@ -281,7 +280,7 @@ export default function Revolution() {
               style={{color: "#FFF", maxWidth: "20em"}}
               paragraph
             >
-              Working together lets us seemlessly transform your ideas to
+              Working together lets us seemlessly transform your ideas into
               reality.
             </Typography>
           </Grid>
@@ -339,9 +338,9 @@ export default function Revolution() {
             >
               You'll be able to see how everything would look and work togther.
               It's easy to make any changes at this stage. Depending on how
-              thourough you are with consultation we may not need to make any
+              thorough you are with consultation we may not need to make any
               changes during this stage. But if your ideas change along the way,
-              or it ends up turing out a little different than you thought we
+              or it ends up turning out a little different than you thought we
               can work with you to make it right and make it your own.
             </Typography>
             <Typography
@@ -518,7 +517,7 @@ export default function Revolution() {
             >
               This is an important part of any process, and one we don't take it
               lightly. Not only is it important to review the work that we make
-              together, but it's also be important to have your work reviewed by
+              together, but it's also important to have your work reviewed by
               others.
             </Typography>
             <Typography
@@ -592,7 +591,7 @@ export default function Revolution() {
             >
               Legos, K'NeX, or Erectors Sets. We've been building for a long
               time. That's why when it comes to building what you need we can
-              offter different blocks or solutions for whatever fits your ideas.
+              often different blocks or solutions for whatever fits your ideas.
               It always helps to have different options available.
             </Typography>
             <Typography
@@ -686,7 +685,7 @@ export default function Revolution() {
               paragraph
             >
               When everything is finalized it's time to launch. H3Vizual will be
-              there every step of the way to make sure your launch date is a
+              there every step of the way to make sure your launch date is as
               seemless for you and your customers.
             </Typography>
             <Typography
@@ -696,9 +695,9 @@ export default function Revolution() {
               paragraph
             >
               The launch day can be one of the most stressful time of your
-              buisness becasue first impressions with customers matter. H3Vizual
+              buisness because first impressions with customers matter. H3Vizual
               will be there all hands on deck to be sure your first impresion is
-              a homerun with customers. An event that will engagethem and keep
+              a homerun with customers. An event that will engage them and keep
               them coming back for the special experience you are offering.
             </Typography>
           </Grid>
@@ -749,9 +748,9 @@ export default function Revolution() {
               Along with helping with the setup of your project we can also help
               with the maintenance of your project. If you are looking to have a
               fresh new update each year we can take care of that, if you are
-              wanting to worry about your own business and customers we can take
-              the worry from the behind the sceens work allowing you to focus on
-              what's important to you.
+              not wanting to worry about your own business and customers we can
+              take the worry from the behind the screens work allowing you to
+              focus on what's important to you.
             </Typography>
             <Typography
               variant="body1"
@@ -772,7 +771,7 @@ export default function Revolution() {
               paragraph
             >
               A well maintained good looking and easy to use website results in
-              happy repeat customers.
+              happy, repeat customers.
             </Typography>
           </Grid>
         </Grid>
