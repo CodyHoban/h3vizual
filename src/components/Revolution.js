@@ -363,66 +363,6 @@ export default function Revolution() {
           />
         </Grid>
       </Grid>
-      {/* <Grid
-        item
-        container
-        direction={matchesMD ? "column" : "row"}
-        className={classes.rowContainer}
-        style={{backgroundColor: "#39B54A", height: "90em"}}
-      >
-        <Grid
-          item
-          container
-          direction="column"
-          alignItems={matchesMD ? "center" : undefined}
-          lg
-        >
-          <Grid item>
-            <Typography
-              variant="h4"
-              gutterBottom
-              align={matchesMD ? "center" : undefined}
-              style={{color: "#000", marginTop: "5em"}}
-            >
-              Review
-            </Typography>
-          </Grid>
-          <Grid item>
-            <Typography
-              variant="body1"
-              align={matchesMD ? "center" : undefined}
-              style={{color: "#FFF", maxWidth: "20em"}}
-              paragraph
-            >
-              Fermentum leo vel orci porta non pulvinar neque laoreet
-              suspendisse. Faucibus turpis in eu mi bibendum. Egestas maecenas
-              pharetra convallis posuere morbi leo urna molestie.
-            </Typography>
-            <Typography
-              variant="body1"
-              align={matchesMD ? "center" : undefined}
-              style={{color: "#FFF", maxWidth: "20em"}}
-              paragraph
-            >
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-              eiusmod tempor incididunt ut labore et dolore magna aliqua.
-              Malesuada nunc vel risus commodo viverra maecenas accumsan.
-            </Typography>
-            <Typography
-              variant="body1"
-              align={matchesMD ? "center" : undefined}
-              style={{color: "#FFF", maxWidth: "20em"}}
-              paragraph
-            >
-              Quis ipsum suspendisse ultrices gravida dictum fusce ut. Tristique
-              senectus et netus et malesuada fames ac turpis.
-            </Typography>
-          </Grid>
-        </Grid>
-        <Grid item lg style={{alignSelf: "center"}}>
-          <img src={review} width="100%" alt="magnifine glass" />
-        </Grid>
-      </Grid> */}
       <Grid
         item
         container
@@ -555,7 +495,12 @@ export default function Revolution() {
           </Grid>
         </Grid>
         <Grid item lg style={{alignSelf: "center"}}>
-          <img src={review} width="100%" alt="magnifine glass" />
+          <img
+            src={review}
+            width="100%"
+            style={matchesMD ? {maxHeight: 400} : undefined}
+            alt="magnifine glass"
+          />
         </Grid>
       </Grid>
       <Grid
@@ -703,7 +648,14 @@ export default function Revolution() {
           </Grid>
         </Grid>
         <Grid item lg style={{alignSelf: "center"}}>
-          <img src={launch} alt="rocket" width="100%" style={{maxWidth: 200}} />
+          <img
+            src={launch}
+            alt="rocket"
+            width="100%"
+            style={
+              matchesMD ? {maxHeight: 600, maxWidth: 200} : {maxWidth: 200}
+            }
+          />
         </Grid>
       </Grid>
       <Grid
@@ -780,7 +732,9 @@ export default function Revolution() {
             src={maintain}
             alt="wrench tightening bolts"
             width="100%"
-            style={{maxWidth: 500}}
+            style={
+              matchesMD ? {maxHeight: 420, maxWidth: 500} : {maxWidth: 500}
+            }
           />
         </Grid>
       </Grid>
