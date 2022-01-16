@@ -71,6 +71,9 @@ const useStyles = makeStyles((theme) => ({
     ...theme.typography.tab,
     minWidth: 10,
     marginLeft: "10px",
+    "&:hover": {
+      opacity: 1,
+    },
   },
   button: {
     ...theme.typography.estimate,
@@ -91,6 +94,7 @@ const useStyles = makeStyles((theme) => ({
   menuItem: {
     ...theme.typography.tab,
     opacity: 0.7,
+    color: "white",
     "&:hover": {
       opacity: 1,
     },
@@ -129,7 +133,7 @@ const useStyles = makeStyles((theme) => ({
 export default function Header(props) {
   const classes = useStyles();
   const theme = useTheme();
-  const matches = useMediaQuery(theme.breakpoints.down("md"));
+  const matchesMD = useMediaQuery(theme.breakpoints.down("md"));
   const iOS = process.browser && /iPad|iPhone|iPod/.test(navigator.userAgent);
 
   const [openDrawer, setOpenDrawer] = useState(false);
@@ -180,7 +184,7 @@ export default function Header(props) {
   ];
 
   const routes = [
-    {name: "Home", link: "/", activeIndex: 0},
+    {name: "Home", link: "/h3vizual", activeIndex: 0},
     {
       name: "Services",
       link: "/services",
@@ -348,14 +352,14 @@ export default function Header(props) {
           <Toolbar disableGutters>
             <Button
               component={Link}
-              to="/"
+              to="/h3vizual"
               disableRipple
               onClick={() => props.setValue(0)}
               className={classes.logoContainer}
             >
               <img src={logo} className={classes.logo} />
             </Button>
-            {matches ? drawer : tabs}
+            {matchesMD ? drawer : tabs}
           </Toolbar>
         </AppBar>
       </ElevationScroll>

@@ -75,7 +75,7 @@ export default function Footer(props) {
                 className={classes.link}
                 component={Link}
                 onClick={() => props.setValue(0)}
-                to="/"
+                to="/h3vizual"
               >
                 Home
               </Grid>
@@ -179,9 +179,11 @@ export default function Footer(props) {
                 item
                 className={classes.link}
                 component={Link}
-                onClick={() => props.setValue(3)}
-                to="/about
-                            "
+                onClick={() => {
+                  window.scrollTo(0, 0);
+                  props.setValue(3);
+                }}
+                to="/about"
               >
                 About Us
               </Grid>
@@ -189,9 +191,11 @@ export default function Footer(props) {
                 item
                 className={classes.link}
                 component={Link}
-                onClick={() => props.setValue(3)}
-                to="/about
-                            "
+                onClick={() => {
+                  window.scrollTo(0, 0);
+                  props.setValue(3);
+                }}
+                to="/about"
               >
                 History
               </Grid>
@@ -200,8 +204,7 @@ export default function Footer(props) {
                 className={classes.link}
                 component={Link}
                 onClick={() => props.setValue(3)}
-                to="/about
-                            "
+                to="/about"
               >
                 Team
               </Grid>

@@ -32,7 +32,7 @@ function App() {
           <Switch>
             <Route
               exact
-              path="/"
+              path="/h3vizual"
               render={(props) => (
                 <LandingPage
                   {...props}
