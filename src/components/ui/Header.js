@@ -248,7 +248,10 @@ export default function Header(props) {
         variant="contained"
         color="secondary"
         className={classes.button}
-        onClick={() => props.setValue(5)}
+        onClick={() => {
+          window.scrollTo(0, 0);
+          props.setValue(5);
+        }}
       >
         Free Estimate
       </Button>
@@ -273,6 +276,7 @@ export default function Header(props) {
               handleMenuItemClick(e, i);
               props.setValue(1);
               handleClose();
+              window.scrollTo(0, 0);
             }}
             selected={i === props.selectedIndex && props.value === 1}
           >
@@ -307,6 +311,7 @@ export default function Header(props) {
               onClick={() => {
                 setOpenDrawer(false);
                 props.setValue(route.activeIndex);
+                window.scrollTo(0, 0);
               }}
             >
               <ListItemText className={classes.drawerItem} disableTypography>
@@ -318,6 +323,7 @@ export default function Header(props) {
             onClick={() => {
               setOpenDrawer(false);
               props.setValue(5);
+              window.scrollTo(0, 0);
             }}
             divider
             button
@@ -354,7 +360,10 @@ export default function Header(props) {
               component={Link}
               to="/h3vizual"
               disableRipple
-              onClick={() => props.setValue(0)}
+              onClick={() => {
+                window.scrollTo(0, 0);
+                props.setValue(0);
+              }}
               className={classes.logoContainer}
             >
               <img src={logo} className={classes.logo} />

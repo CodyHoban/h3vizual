@@ -74,7 +74,10 @@ export default function Footer(props) {
                 item
                 className={classes.link}
                 component={Link}
-                onClick={() => props.setValue(0)}
+                onClick={() => {
+                  window.scrollTo(0, 0);
+                  props.setValue(0);
+                }}
                 to="/h3vizual"
               >
                 Home
@@ -88,6 +91,7 @@ export default function Footer(props) {
                 className={classes.link}
                 component={Link}
                 onClick={() => {
+                  window.scrollTo(0, 0);
                   props.setValue(1);
                   props.setSelectedIndex(0);
                 }}
@@ -100,6 +104,7 @@ export default function Footer(props) {
                 className={classes.link}
                 component={Link}
                 onClick={() => {
+                  window.scrollTo(0, 0);
                   props.setValue(1);
                   props.setSelectedIndex(1);
                 }}
@@ -112,6 +117,7 @@ export default function Footer(props) {
                 className={classes.link}
                 component={Link}
                 onClick={() => {
+                  window.scrollTo(0, 0);
                   props.setValue(1);
                   props.setSelectedIndex(2);
                 }}
@@ -124,6 +130,7 @@ export default function Footer(props) {
                 className={classes.link}
                 component={Link}
                 onClick={() => {
+                  window.scrollTo(0, 0);
                   props.setValue(1);
                   props.setSelectedIndex(3);
                 }}
@@ -139,7 +146,10 @@ export default function Footer(props) {
                 item
                 className={classes.link}
                 component={Link}
-                onClick={() => props.setValue(2)}
+                onClick={() => {
+                  window.scrollTo(0, 0);
+                  props.setValue(2);
+                }}
                 to="/revolution"
               >
                 The Revolution
@@ -148,7 +158,10 @@ export default function Footer(props) {
                 item
                 className={classes.link}
                 component={Link}
-                onClick={() => props.setValue(2)}
+                onClick={() => {
+                  window.scrollTo(0, 0);
+                  props.setValue(2);
+                }}
                 to="/revolution"
               >
                 Vision
@@ -157,7 +170,10 @@ export default function Footer(props) {
                 item
                 className={classes.link}
                 component={Link}
-                onClick={() => props.setValue(2)}
+                onClick={() => {
+                  window.scrollTo(0, 750);
+                  props.setValue(2);
+                }}
                 to="/revolution"
               >
                 Technology
@@ -166,7 +182,11 @@ export default function Footer(props) {
                 item
                 className={classes.link}
                 component={Link}
-                onClick={() => props.setValue(2)}
+                s
+                onClick={() => {
+                  window.scrollTo(0, 1700);
+                  props.setValue(2);
+                }}
                 to="/revolution"
               >
                 Process
@@ -192,7 +212,7 @@ export default function Footer(props) {
                 className={classes.link}
                 component={Link}
                 onClick={() => {
-                  window.scrollTo(0, 0);
+                  window.scrollTo(0, 350);
                   props.setValue(3);
                 }}
                 to="/about"
@@ -203,7 +223,10 @@ export default function Footer(props) {
                 item
                 className={classes.link}
                 component={Link}
-                onClick={() => props.setValue(3)}
+                onClick={() => {
+                  window.scrollTo(0, 1535);
+                  props.setValue(3);
+                }}
                 to="/about"
               >
                 Team
@@ -216,7 +239,10 @@ export default function Footer(props) {
                 item
                 className={classes.link}
                 component={Link}
-                onClick={() => props.setValue(4)}
+                onClick={() => {
+                  window.scrollTo(0, 0);
+                  props.setValue(4);
+                }}
                 to="/contact"
               >
                 Contact Us
