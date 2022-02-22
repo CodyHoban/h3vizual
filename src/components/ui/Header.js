@@ -239,6 +239,7 @@ export default function Header(props) {
             aria-owns={route.ariaOwns}
             aria-haspopup={route.ariaPopup}
             onMouseOver={route.mouseOver}
+            onClick={() => window.scrollTo(0, 0)}
           />
         ))}
       </Tabs>
